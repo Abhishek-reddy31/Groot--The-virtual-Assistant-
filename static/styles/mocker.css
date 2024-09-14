@@ -1,0 +1,117 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* background: var(--color-darkblue); */
+    background-image: 
+    /* linear-gradient(
+        115deg,
+        rgba(247, 247, 248, 0.8),
+        rgba(246, 246, 252, 0.7)
+      ), */
+      url(https://www.ericsson.com/49c0c7/assets/global/qbank/2021/06/04/people-working-in-soc-room-dark-ericsson-security-manager-118711dfac8eb2fc10e87e25bfc3c8586d7872.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  h1 {
+    position: relative;
+    color: white;
+    top: 20px;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-white);
+    margin: 0;
+  }
+  
+  .heading {
+    text-align: center;
+    color: white;
+  }
+  #description {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+  }
+  .form {
+    background: var(--color-purple-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    text-align: left;
+    color: white;
+  }
+  .form-control {
+    width: 50%;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  .form-contro {
+    width: 101%;
+    height: 45px;
+    border-radius: 3px;
+  }
+  .form-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2px;
+    height: 79px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-group label {
+    width: 20%;
+  }
+  .form-group input, .form-group select {
+    width: 42%;
+  }
+  #config_main , #config_directory, 
+   #login_directory,#login_main, #AWS_TYPE,#submit_MAIN,#azurec_main,#azurec_directory,#loading,#GCP_offline,#gcp-directory, #OFFLINE_TYPE_MAIN, #ONLINE_TYPE_MAIN,#VMWARE_ONLINE_TYPE_MAIN, #GCP_TYPE, #GCP_ONLINE_TYPE_MAIN,#placements_directory,#compute_directory,#keystone_directory, #OPENSTACK_TYPE,#vmware_directory,#vmware_main,#gcp_directory,#keystone_main,#placements_main,#compute_main,#azure_main,#azure_directory{
+    display: none;
+  }
+  select:required {
+    color: rgb(1, 1, 14);
+  }
+  .clue {
+    font-size: 14px;
+  }
+  h1 {
+  text-align: center;
+}
+  .main-div {
+    display: block;
+    text-align: center;
+  }
+  
+  .comment{
+    width: 100%;
+    min-height: 120px;
+  }
+  .submit-button {
+    display: block;
+    width: 25%;
+    padding: 0.75rem;
+    background-color:#F5FFFA;
+    color: inherit;
+    border-radius: 37px;
+    cursor: pointer;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }

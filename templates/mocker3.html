@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mocker.css') }}">
+        <h1>VIRTUAL ASSISTANT</h1>
+    </head>
+    <body>
+        <form method="POST">
+            <div class="form-group" id="submit_validate">
+                <button type="submit" name="submit1" id="submit1" value="start_assistant" class="submit-button" disabled style="font-weight:bold;">start</button>
+            </div>
+            <div class="form-group" id="submit_validate1">
+                <button type="submit" name="submit3" id="submit3" value="restart_assistant" class="submit-button" style="font-weight:bold;">restart</button>
+            </div>
+            <div class="form-group" id="submit_validate1">
+                <button type="submit" name="submit2" id="submit2" value="stop" class="submit-button" style="font-weight:bold;">stop</button>
+            </div>
+        </form>
+        <script>
+            {
+                let checkmsg = '{{msg}}'
+                // let colorchangetag = document.getElementById("submit_validate")
+                if (checkmsg == "start_assistant"){
+                    document.getElementById('submit1').style.backgroundColor='#90EE90';
+                }else if (checkmsg == "restart_assistant") {
+                    document.getElementById('submit1').style.backgroundColor='#90EE90';
+                    document.getElementById('submit3').style.backgroundColor='#90EE90';
+
+                } else  if (checkmsg == "stop") {
+                    document.getElementById('submit1').style.backgroundColor='#90EE90';
+                    document.getElementById('submit2').style.backgroundColor='#90EE90';
+                    document.getElementById('submit3').style.backgroundColor='#90EE90';
+                }
+            }
+        </script>
+    </body>
+</html>
